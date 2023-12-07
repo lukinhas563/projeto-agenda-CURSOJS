@@ -61,8 +61,8 @@ server.use(routes); // Rotas.
 
 // SERVIDOR
 server.on('pronto', () => {
-    const port = 3000;
-    server.listen(port, () => {
-        console.log(`Servidor rodando na URL http://localhost:${port}/index`);
+    const PORT = process.env.PORT || 3000;
+    server.listen(PORT, () => {
+        console.log(`Servidor rodando na URL http://localhost:${PORT}/index`);
     });
 })

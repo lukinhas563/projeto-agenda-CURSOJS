@@ -14,7 +14,7 @@ CRUD -> CREATE, READ, UPDATE,    DELETE
 */
 
 // Rotas da HomePage
-route.get('/index', homeController.index);
+route.get('/', homeController.index);
 
 // Rotas de login
 route.get('/login/index', loginController.index);
